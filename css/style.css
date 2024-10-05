@@ -1,0 +1,112 @@
+/* Custom Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffebee; /* Merah muda */
+}
+
+header {
+    background-color: #800000; /* Merah marun */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    background-color: #800000; /* Merah marun */
+}
+
+.nav-link {
+    color: white !important;
+}
+
+/* Services Section */
+.services i {
+    color: #ff5252; /* Merah muda */
+}
+
+.services h3 {
+    color: #800000; /* Merah marun */
+}
+
+.services .col-md-4 {
+    margin-bottom: 30px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #800000; /* Merah marun */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Button Customization */
+.btn-primary {
+    background-color: #ff5252; /* Merah muda */
+    border-color: #ff5252;
+}
+
+.btn-primary:hover {
+    background-color: #800000; /* Merah marun */
+    border-color: #800000;
+}
+
+/* Custom Styles for Logo */
+.logo img {
+    width: 100px; /* Sesuaikan dengan ukuran yang diinginkan */
+    height: 100px; /* Sesuaikan dengan ukuran yang diinginkan */
+    object-fit: cover; /* Agar gambar terisi secara proporsional */
+    border-radius: 50%; /* Membuat gambar bulat */
+    border: 2px solid #800000; /* Tambahkan border marun jika diinginkan */
+    transition: transform 0.3s ease; /* Transisi saat hover */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Sedikit membesarkan gambar saat dihover */
+}
+
+/* Custom Dropdown Colors */
+.dropdown-menu {
+    background-color: #800000; /* Warna marun untuk background dropdown */
+}
+
+.dropdown-item {
+    color: #fff; /* Warna teks putih */
+}
+
+.dropdown-item:hover {
+    background-color: #ffb6c1; /* Warna merah muda untuk hover */
+    color: #800000; /* Warna teks marun saat hover */
+}
+
+/* Navbar Toggle Button */
+.navbar-toggler {
+    border-color: transparent; /* Hilangkan border */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .nav-link {
+        padding: 10px; /* Tambahkan padding untuk target sentuh yang lebih baik */
+    }
+
+    .dropdown-menu {
+        background-color: #800000; /* Warna latar dropdown tetap */
+    }
+
+    .dropdown-item {
+        color: #fff; /* Teks putih pada item dropdown */
+    }
+
+    .dropdown-item:hover {
+        background-color: #ffb6c1; /* Warna hover merah muda */
+        color: #800000; /* Warna teks marun saat hover */
+    }
+}

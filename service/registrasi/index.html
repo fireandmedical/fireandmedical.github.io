@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Form Registrasi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"><link rel="icon" href="../../images/logo.png">
+</head>
+<body>
+    <header class="text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="../../images/logo.png" alt="San Andreas Fire and Medical Departement Logo" class="img-fluid">
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="../../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="../../about.html" class="nav-link">About</a></li>
+                    <!-- Dropdown Menu for info -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Information
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="../../info/bpjs/index.html">Info BPJS</a></li>
+                            <li><a class="dropdown-item" href="../../info/sks/index.html">info SKS</a></li>
+                            <li><a class="dropdown-item" href="../../info/registrasi/index.html">Info Registrasi SAFD</a></li>
+                            <li><a class="dropdown-item" href="../../info/request/index.html">Info Request</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="../bpjs/index.html">Daftar BPJS</a></li>
+                            <li><a class="dropdown-item" href="../sks/index.html">Request SKS</a></li>
+                            <li><a class="dropdown-item" href="index.html">Request Form Registrasi SAFD</a></li>
+                            <li><a class="dropdown-item" href="../request/index.html">Request</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center">Form Registrasi SAFAMD</h2>
+            <form id="bpjsForm" action="https://formspree.io/f/mnnqavnq" method="POST" enctype="multipart/form-data">
+                <!-- Input Tersembunyi untuk Judul -->
+                <input type="hidden" name="judul" value="**Form Registrasi**">
+                <!-- Input Tersembunyi untuk Tag Khusus -->
+                <input type="hidden" name="Tag" value="@「 San Andreas Fire/Medical Department」 ">
+
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="name" name="Nama" placeholder="Masukkan Nama Karakter" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">No. HP</label>
+                    <input type="number" class="form-control" id="phone" name="Hp" placeholder="Masukkan No. HP" required>
+                </div>
+                <div class="mb-3">
+                    <label for="photo" class="form-label">Foto /Stats</label>
+                    <input type="text" class="form-control" id="photo" name="/stats" placeholder="Masukkan link foto /stats menggunakan imgbb.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="photo" class="form-label">Akun Discord</label>
+                    <input type="text" class="form-control" id="photo" name="Akun DC" placeholder="Masukkan link foto Screenshots Akun DC yang ada di SAFD menggunakan imgbb.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="reason" class="form-label">Alasan Ingin Bergabung</label>
+                    <input type="text" class="form-control" id="reason" name="Alasan ingin bergabung" placeholder="Masukkan Alasan kenapa anda ingin bergabung menggunakan link pastebin.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="benefit" class="form-label">Apa yang akan anda lakukan jika diterima</label>
+                    <input type="text" class="form-control" id="benefit" name="Jika Diterima" placeholder="Kirim link menggunakan pastebin.com ketika kamu sudah diterima menjadi anggota" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-white text-center py-3 bg-dark">
+        <p>&copy; 2024 SAFD. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

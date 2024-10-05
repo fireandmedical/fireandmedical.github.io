@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Andreas Fire and Medical Departement</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <header class="text-white p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo">
+            <img src="images/logo.png" alt="San Andreas Fire and Medical Department Logo" class="img-fluid">
+        </div>
+        <nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="infoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Information
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="infoDropdown">
+                            <li><a class="dropdown-item" href="info/bpjs/index.html">Info BPJS</a></li>
+                            <li><a class="dropdown-item" href="info/sks/index.html">Info SKS</a></li>
+                            <li><a class="dropdown-item" href="info/registrasi/index.html">Info Registrasi SAFD</a></li>
+                            <li><a class="dropdown-item" href="info/request/index.html">Info Request</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="service/bpjs/index.html">Daftar BPJS</a></li>
+                            <li><a class="dropdown-item" href="service/sks/index.html">Request SKS</a></li>
+                            <li><a class="dropdown-item" href="service/registrasi/index.html">Request Form Registrasi SAFD</a></li>
+                            <li><a class="dropdown-item" href="service/request/index.html">Request</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+    <section class="hero text-center py-5">
+        <div class="container">
+            <h1>Welcome to the San Andreas Fire and Medical Departement</h1>
+            <p class="lead">Providing Quality Healthcare for Everyone</p>
+            <button class="btn btn-primary" onclick="bookAppointment()">Book an Appointment</button>
+        </div>
+    </section>
+
+    <section class="services py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="bx bx-stethoscope bx-lg mb-3"></i>
+                    <h3>General Checkup</h3>
+                    <p>Regular health assessments and consultations.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bx bx-plus-medical bx-lg mb-3"></i>
+                    <h3>Emergency Care</h3>
+                    <p>24/7 emergency services for urgent care needs.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bx bx-capsule bx-lg mb-3"></i>
+                    <h3>Pharmacy</h3>
+                    <p>On-site pharmacy for all your prescription needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white text-center py-3">
+        <p>&copy; 2024 San Andreas Fire and Medical Departement. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

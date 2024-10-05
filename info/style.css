@@ -1,0 +1,76 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+    background-color: #7b1e25; /* Merah Marun */
+}
+
+/* Logo */
+.logo img {
+    width: 80px; /* Atur ukuran logo sesuai kebutuhan */
+    height: 80px; /* Atur ukuran logo sesuai kebutuhan */
+    border-radius: 50%; /* Membuat logo berbentuk lingkaran */
+    border: 5px solid #ff6f61; /* Merah Muda */
+}
+
+/* Navigation */
+.nav-link {
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ff6f61; /* Merah Muda */
+}
+
+.dropdown-menu {
+    background-color: #ffffff; /* Warna latar dropdown */
+}
+
+.dropdown-item {
+    color: #000; /* Warna teks item dropdown */
+}
+
+.dropdown-item:hover {
+    background-color: #ff6f61; /* Merah Muda */
+    color: #ffffff; /* Warna teks saat hover */
+}
+
+/* Section */
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #7b1e25; /* Merah Marun */
+}
+
+/* Footer */
+footer {
+    background-color: #7b1e25; /* Merah Marun */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo img {
+        width: 60px; /* Ukuran logo untuk layar kecil */
+        height: 60px; /* Ukuran logo untuk layar kecil */
+    }
+}

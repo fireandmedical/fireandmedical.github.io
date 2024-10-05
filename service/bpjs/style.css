@@ -1,0 +1,40 @@
+body {
+    background-color: #f8f9fa; /* Warna latar belakang tetap sama */
+}
+
+header {
+    background-color: #800000; /* Marun untuk header */
+}
+
+footer {
+    background-color: #a52a2a; /* Warna merah muda untuk footer */
+}
+
+form {
+    background-color: #ffffff; /* Latar belakang form putih */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk logo */
+.logo img {
+    border-radius: 50%; /* Membuat logo bulat */
+    max-width: 80px; /* Ukuran maksimum untuk logo */
+    height: auto; /* Tinggi otomatis untuk menjaga rasio aspek */
+    transition: transform 0.3s; /* Transisi halus untuk efek hover */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+/* Gaya untuk menu navigasi */
+.nav-link {
+    color: #fff; /* Warna teks putih untuk link navigasi */
+    transition: color 0.3s; /* Transisi halus untuk warna link */
+}
+
+.nav-link:hover {
+    color: #ff69b4; /* Merah muda saat hover */
+}
